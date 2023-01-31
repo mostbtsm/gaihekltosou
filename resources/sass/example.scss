@@ -1,0 +1,373 @@
+.example-list {
+  .button-div {
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px #515151;
+  }
+  .header {
+    display: flex;
+    background-color: $dark;
+    margin: auto;
+  }
+
+  .header-img {
+    border-radius: 100%;
+    background-color: #49b4bc;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 20px 30px;
+  }
+
+  .header-img img {
+    margin: auto;
+    width: 60%;
+  }
+
+  .header-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 50px);
+  }
+
+  .header-date {
+    color: #e2c905;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .header-txt {
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-txt p {
+    color: #ad9a0a;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .header-txt .m-name {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7px;
+
+    p {
+      font-size: 21px;
+      color: white;
+      display: flex;
+    }
+    a {
+      display: block;
+      color: white;
+      padding: 4px;
+      border: 1px solid white;
+      text-align: center;
+      width: 200px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      a {
+        max-width: 40%;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 30px 20px;
+    background-color: $dark;
+    margin: auto;
+  }
+
+  .part {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    border-top: solid 1px #8c8b8b;
+    align-items: center;
+  }
+
+  .part-left {
+    background-color: #fdeb08;
+    border-radius: 16px;
+    margin-right: 10px;
+    width: 90px;
+    min-width: 90px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .part-right {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .part-txt {
+    color: white;
+  }
+
+  .slick-dots li button:before {
+    color: white !important;
+  }
+
+  .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    color: #49b4bc !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #49b4bc !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .construction-case {
+    .header {
+      width: auto;
+    }
+
+    .part {
+      width: auto;
+    }
+  }
+
+  .construction-list {
+    .header {
+      width: auto;
+    }
+
+    .header-img {
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      margin: 30px 10px 20px 30px;
+    }
+
+    .header-date {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .header-txt p {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .main {
+      padding: 60px 20px 30px 20px;
+      width: auto;
+    }
+
+    .main-img {
+      width: 100px;
+      height: 72px;
+    }
+
+    .main-img-back {
+      right: 8px;
+      top: 50px;
+      width: 110px;
+      height: 90px;
+    }
+
+    .main-img img {
+      width: 90%;
+      height: 68px;
+    }
+
+    .main-img-txt {
+      right: 10px;
+      top: 46px;
+      border-radius: 20px;
+      padding: 3px 15px;
+      font-size: 10px;
+    }
+
+    .part {
+      padding: 7px 5px;
+    }
+
+    .part-left {
+      border-radius: 10px;
+      margin-right: 10px;
+      width: 80px;
+      height: 25px;
+      font-size: 14px;
+    }
+
+    .part-right {
+      font-size: 14px;
+    }
+
+    .part-txt {
+      font-size: 14px;
+    }
+  }
+}
+
+.example-form {
+  background-color: $secondary-color;
+  margin-bottom: -3rem;
+
+  form {
+    padding: 15px;
+    background-color: $secondary-color;
+  }
+
+  .form-group {
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: solid 1px white;
+  }
+
+  .col-form-label {
+    font-size: 18px;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  .control-group {
+    padding: 10px 0 10px 15px;
+    margin: 0;
+    border-bottom: solid 1px white;
+
+    .form-group {
+      border: none;
+    }
+
+    .group-label {
+      font-size: 18px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    label {
+      font-size: 18px;
+      color: #212529;
+    }
+  }
+
+  .warranty-group {
+    .form-group {
+      margin-left: 1rem !important;
+    }
+  }
+
+  .date-group {
+    select {
+      width: fit-content;
+    }
+
+    label {
+      font-size: 18px;
+      color: $primary-color;
+      font-weight: 700;
+      min-width: 3rem;
+      padding: calc(.375rem + 1px) 0.5rem;
+    }
+  }
+
+  select {
+    border: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 45px;
+  }
+
+  select:focus {
+    outline: none !important;
+  }
+
+  .multiselect__tags {
+    border: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 45px;
+  }
+
+  input {
+    border: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 45px;
+  }
+
+  input:focus {
+    outline: none !important;
+  }
+
+  textarea {
+    border: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+  }
+
+  textarea:focus {
+    outline: none !important;
+  }
+
+  .button-div {
+    text-align: center;
+  }
+
+  .btn-confirm-edit {
+    width: 40%;
+    min-width: 270px;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+    background-image: linear-gradient(#058cd6, #5eb6e6);
+    border: none;
+    border-bottom: solid 4px #058cd6;
+    padding: 8px 50px;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .btn-confirm-edit:hover {
+    padding: 9px 50px 7px 50px;
+    background-image: none;
+    background-color: #058cd6;
+    box-shadow: inset 0px 0px 10px #0038a3;
+  }
+
+  .btn-delete {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    margin: auto auto 3rem auto;
+    color: $danger-color;
+  }
+}

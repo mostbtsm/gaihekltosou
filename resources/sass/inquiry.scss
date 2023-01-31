@@ -1,0 +1,112 @@
+.inquiry-form {
+  form {
+    width: 80%;
+    margin: 50px auto auto;
+
+    label {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #747373;
+    }
+
+    input[type="text"] ,input[type="email"] {
+      border: solid 1px #e8e7e7;
+      font-size: 18px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      resize: none;
+    }
+
+    input[type="text"]:focus ,input[type="email"]:focus {
+      outline: none !important;
+    }
+
+    input[type="text"]:disabled ,input[type="email"]:disabled {
+      background: bottom;
+      border: none;
+      box-shadow: none;
+      text-align: center;
+      color: #318cd2;
+    }
+
+    textarea {
+      border: solid 1px #e8e7e7;
+      font-size: 18px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      resize: none;
+    }
+
+    textarea:focus {
+      outline: none !important;
+    }
+
+    textarea:disabled {
+      background: bottom;
+      border: none;
+      box-shadow: none;
+      text-align: center;
+      color: #318cd2;
+    }
+
+    .btn-send {
+      display: block;
+      margin: auto;
+      margin-top: 15px;
+      font-size: 22px;
+      width: 180px;
+      border-radius: 5px;
+      font-weight: 900;
+      border: solid #727172 3px;
+      background-image: linear-gradient(#999899, #717071);
+      color: white;
+      text-shadow: 1px 1px #9d9d9e;
+      padding: 5px 30px 5px 30px;
+    }
+
+    .btn-send:hover {
+      border: solid #e50012 3px;
+      font-weight: 900;
+      opacity: 0.9;
+      border-width: 3px 1px 1px 1px;
+      background-image: linear-gradient(#ec5e47, #e50012);
+      color: white;
+      text-shadow: 1px 1px #9d9d9e;
+    }
+  }
+}
+
+.inquiry-confirm {
+  border: solid red 2px;
+  width: 80%;
+  padding: 5px;
+  margin: 15px auto;
+
+  .message-content {
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+.inquiry-complete {
+  .message-title {
+    color: red;
+    margin-top: 25vh;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .message-content {
+    color: #747373;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

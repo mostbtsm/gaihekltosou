@@ -1,0 +1,196 @@
+.painter-list  {
+  .list-item {
+    padding: 15px 7px;
+  }
+
+  .company-card-header {
+    display: flex;
+    padding: 0 15px;
+    margin-top: .5rem;
+  }
+
+  .company-image-area {
+    display: flex;
+    flex: 0 0 33.333333%;
+    align-items: center;
+    max-width: 33.333333%;
+    padding-right: 15px;
+  }
+
+  .company-name-area {
+    display: flex;
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+    position: relative;
+
+    .company-name-box {
+      .company-address {
+        font-size: 12px;
+        color: #787777;
+        margin-bottom: 0px;
+      }
+
+      .company-name {
+        font-size: 18px;
+        color: $primary-color;
+        white-space: nowrap;
+      }
+
+      .work-type {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+
+        .item {
+          border: solid 1px black;
+          padding: 1px;
+          font-size: 13px;
+          font-weight: 500;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .favorite-box {
+      z-index: 1000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 10px;
+
+      .favorite-label {
+        white-space: nowrap;
+      }
+
+      .favorite-icon {
+        width: 3.5em;
+        height: 3.5em;
+        max-width: 100px;
+        top: 13px;
+        left: 0px;
+        background-image: url("/image/favorite1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      .favorite-icon.active {
+        background-image: url("/image/favorite2.png");
+      }
+    }
+  }
+
+  .company-comment {
+    letter-spacing: -0.9px;
+    white-space: pre-line;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  .star-rating {
+    display: flex;
+    align-items: center;
+
+    .star-container {
+      display: flex;
+    }
+
+    .star-container:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+
+  .rate {
+    display: flex;
+
+    .label {
+      font-size: 11px;
+      margin-bottom: 0px;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    .total-number {
+      font-size: 11px;
+      margin-bottom: 0px;
+      align-self: center;
+      white-space: nowrap;
+    }
+  }
+
+  .type-col {
+    padding-left: 4px;
+    padding-right: 4px;
+
+    .type {
+      background-color: $primary-color;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .name {
+        font-size: 12px;
+        color: white;
+        align-self: center;
+        padding-left: 5px;
+      }
+
+      .number {
+        font-size: 16px;
+        color: white;
+        align-self: center;
+        padding-right: 5px;
+        .unit {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.painter-search {
+  form {
+    padding: 15px;
+  }
+
+  .btn-area{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .form-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    label {
+      width: 110px;
+      padding-right: 10px;
+      margin: 0;
+      white-space: nowrap;
+      font-size: 18px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    select, input {
+      border: none;
+      font-size: 18px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      height: 45px;
+    }
+
+    select:focus, input:focus {
+      outline: none !important;
+    }
+
+    select {
+      padding-left: 6px;
+    }
+  }
+}

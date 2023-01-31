@@ -1,0 +1,174 @@
+.bussiness-form{
+    .tab {
+        display: flex;
+        height: 40px;
+        color: white!important;
+    }
+
+    .tab-l {
+        width: 50%;
+        height: 100%;
+        background-color:#42f3bf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab-l:hover {
+        background-color: #0cd196;
+    }
+
+    .tab-r {
+        width: 50%;
+        height: 100%;
+        background-color:#f5b6b6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab-r:hover {
+        background-color: #f35252;
+    }
+
+    .nav-item{
+        width: 50%;
+        font-size: 28px;
+        a{
+            border-radius: 30px 30px 0 0;
+            border: none;
+            color: #9191c9;
+            font-weight: 700;
+           
+        }
+        a.active{
+            color: #00007b !important;        
+        }
+
+        &:first-child a.active{
+            box-shadow: 3px 1px 5px rgb(0 0 0 / 18%);
+        }
+        &:nth-child(2) a.active{
+            box-shadow: -3px -1px 5px rgb(0 0 0 / 18%);
+        }
+        &:first-child a{
+            background: #e5f7ff;
+            margin-right: 2px;
+        }
+        &:nth-child(2) a{            
+            background: #f1f1fe;
+            margin-left: 2px;
+        }
+       
+    }
+    .tab-content{
+        .tab-pane{
+            &:first-child{
+                background: #e5f7ff;
+            }
+            &:nth-child(2){
+                background: #f1f1fe;
+            }
+        }
+        
+        height: auto !important;
+        transition: none !important;
+        .data {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 10px auto;
+            position: relative;
+        }
+        
+        .data-img {
+            width: 40%;
+            img {
+                width: 100%;
+                height: 115px;
+            }
+        }
+
+        .data-body {
+            width: 57%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .data-link {
+            color: #6262fc;
+            font-size: 10px;
+        }
+
+        .data > img {
+            position: absolute;
+        }
+
+        .data > a {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 2px 10px;
+            border-radius: 20px;
+            border: 1px solid #8b8686;
+            font-size: 10.5px;
+            background-color: white;
+            color: #0f0fc0;
+            font-weight: bold;
+        }
+
+        .data > a:hover {
+            border-color: #5a5757;
+            background-color: #8b8686;
+            color: #ddd9d9;
+        }
+
+        .data-name {
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 22px;
+            color: #00007b;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .data-name-text {
+                width: 80%;
+                text-align: left;
+            }
+
+            .data-date {
+                width: 20%;
+                font-size: 12px;
+                color: #6e6d6d;
+                text-align: right;
+            }
+        }
+
+        .data-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #6e6d6d;
+            margin: 5px 0 auto;
+            font-size: 13px;
+            width: 100%;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                width: 10%;
+            }
+            .data-content-text {
+                width: 85%;
+            }
+        }
+    }
+}

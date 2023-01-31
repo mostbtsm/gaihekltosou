@@ -1,0 +1,267 @@
+.mypage-header{
+  display: flex;
+  position: fixed;
+  z-index: 1030;
+  height: 100px;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  .mypage-profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 80px;
+    margin-top: -25px;
+  }
+  .col{
+    margin-top: 10px;
+  }
+}
+
+.mypage-profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 180px;
+
+}
+.mypage-property-image {
+  height: 240px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+
+  .mypage-property-title {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+
+    h5 {
+      margin: 0.5rem;
+    }
+  }
+}
+
+.mypage-property-image .mypage-property-title {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.mypage-property-image .mypage-property-title h5 {
+  margin: 0.5rem;
+}
+
+.mypage-link-group {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 2px;
+
+  .mypage-link {
+    width: 30%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    margin: 5px;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: black 0px 2px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    background-color: $primary-color;
+
+    .link-item{
+      color: white;
+      text-decoration: none;
+    }
+
+    .card-title{
+      margin-bottom: 0px;
+      font-weight: 800;
+      font-size: 18px;
+      text-shadow: 0.5px 0.5px #9d9d9e;
+    }
+  }
+
+  .mypage-link:hover {
+    background-color: #b4b4b4;
+    color: #908c8c;
+  }
+}
+
+.card-profile-image {
+  max-width: 320px;
+  margin: auto;
+}
+
+.image-file-button {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+
+  .btn{
+    font-size: 1rem !important;
+    margin: 0px !important;
+  }
+}
+
+.painter-mypage-profile-image {
+  width: 320px;
+  height: 240px;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.user-profile-update, .painter-profile-update {
+  .btn-send {
+    display: block;
+    margin:auto;
+    margin-top: 15px;
+    font-size: 22px;
+    width: 270px;
+    border-radius:33px;
+    font-weight: 900;
+    border: solid #727172 3px;
+    background-image: linear-gradient(#999899, #717071);
+    color: white;
+    text-shadow: 1px 1px #9d9d9e;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .btn-send:hover {
+    border: solid #e50012 3px;
+    font-weight:900;
+    opacity: 0.9;
+    border-width: 3px 1px 1px 1px;
+    background-image: linear-gradient(#ec5e47, #e50012);
+    color: white;
+    text-shadow: 1px 1px #9d9d9e;
+  }
+
+  .form-title{
+    color: $primary-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .form-text{
+    color: #747373;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+  label {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    margin:0px;
+    color: #747373;
+    justify-content: space-between;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    border: solid 1px #e8e7e7;;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  input, select {
+    height: 45px;
+  }
+
+  div.multiselect {
+    border: solid 1px #e8e7e7;;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.card-painter-images {
+  max-width: 320px;
+  margin: auto;
+}
+
+.mypage-painter-images {
+  height: 240px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.card-caution {
+  background-color: #feff90;
+
+  .card-body {
+    padding: 0.8rem;
+  }
+
+  .card-title {
+    text-align: center;
+    color: red;
+    font-weight: bold !important;
+  }
+
+  .card-text {
+    text-align: center;
+    color: #495057 !important;
+    font-size: 0.95rem !important;
+    font-weight: bold !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .mypage-link-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    .mypage-link {
+      width: calc((960px - 55px) / 3);
+      height: calc((960px - 55px) / 3);
+      .card-title{
+        margin-bottom: 0px;
+        font-weight: 800;
+        font-size: 30px;
+        text-shadow: 0.5px 0.5px #9d9d9e;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .mypage-link-group .mypage-link .card-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-property-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-painter-images {
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    .image-file-button {
+      .btn{
+        font-size: 0.5rem !important;
+      }
+    }
+  }
+  .mypage-painter-images {
+    height: 120px;
+  }
+}

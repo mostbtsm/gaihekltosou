@@ -1,0 +1,98 @@
+#header {
+  background-color: $primary-color;
+  min-height: 40px;
+
+  .bg-topbar{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+
+    .topbar-left {
+      position: absolute;
+      left: 0.5rem;
+    }
+
+    .topbar-center {
+      text-align: center;
+    }
+
+    .topbar-right {
+      position: absolute;
+      right: 0.5rem;
+    }
+  }
+}
+
+#header-toggle-menu {
+  background-color: $secondary-color;
+
+  .nav-item {
+    border-bottom: 1px solid gray;
+    text-align: right;
+  }
+
+  .nav-link {
+    color: $primary-color;
+    display: block;
+    padding: .5rem 1rem;
+  }
+}
+
+#chat-header {
+  background-color: $secondary-color;
+  min-height: 40px;
+
+  .bg-topbar{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+
+    .topbar-left {
+      position: absolute;
+      left: 0.5rem;
+    }
+
+    .topbar-center {
+      position: absolute;
+      left: 3rem;
+    }
+
+    .topbar-right {
+      position: absolute;
+      right: 0.5rem;
+    }
+  }
+
+  .btn-consul-status {
+    background-color: $blue;
+    color: white;
+    padding: 4px 24px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+#secondary-header {
+  background-color: $secondary-color;
+  min-height: 40px;
+
+  .bg-topbar{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+
+    .topbar-left {
+      position: absolute;
+      left: 0.5rem;
+    }
+
+    .topbar-center {
+      text-align: center;
+    }
+
+    .topbar-right {
+      position: absolute;
+      right: 0.5rem;
+    }
+  }
+}

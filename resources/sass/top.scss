@@ -1,0 +1,186 @@
+.top-page{
+    .top{
+      .top-header{
+        background-color: $primary-color;
+        text-align: center;
+        width: 100%;
+        min-height: 35px;
+        color: #ffff00;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+      }
+      .top-image{
+        
+        .top-title{
+          margin-top:-30px;
+          position: relative;
+          z-index: 10;
+        }
+        .main-image{
+          margin-top: -67px;
+          position: relative;
+        }
+      }
+    }
+    .companys{
+      img{
+        margin-top: -1px;
+      }
+      .button-group{
+        text-align: center;
+        .btn-quotation{
+          padding: 10px;
+          border-radius: 30px;
+          border: solid 3px #cccccc;
+          box-shadow: 0 0 0 1px #9c9c9c;
+          cursor: pointer;
+          width: 170px;
+          display: inline-block;
+          margin: 0px 10px 0px 0px;
+          color: #747373;
+          font-weight: 600;
+          font-size: 16px;     
+        }
+      
+        .btn-quotation:hover{
+          color: #cccccc;
+          background-color: #9c9c9c;
+          border:none;
+          box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+        }
+      }
+      
+    }
+
+    .lowest-price{
+      .image-container{
+        background-color: $secondary-color;
+        margin-top: 20px;
+        padding: 20px;
+        padding-bottom: 0px;
+      }
+    }
+    
+    .intro{
+      .form-container{
+        background-color: #ffff00;
+        padding: 20px;
+        padding-bottom: 50px;
+        .card{
+            background-color: $primary-color;
+            padding: 20px;
+            padding-bottom: 50px;
+            border-radius: 20px;
+            .method{
+                .title{
+                        text-align: center;
+                        font-size: 36px;
+                        font-weight: 900;
+                        color: red;
+                        text-shadow:
+                        0px 1px red,  
+                        1px 0px red,
+                        1px 1px red,
+                        calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0 var(--stroke-color),
+                        calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0 var(--stroke-color),
+                    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0
+                        var(--stroke-color),
+                    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
+                    var(--stroke-color);      
+                }
+
+                .content{
+                    padding:20px;
+                }       
+            }
+                .btn-quotation{
+                    padding: 10px;
+                    border-radius: 30px;
+                    border: solid 3px #cccccc;
+                    box-shadow: 0 0 0 1px #9c9c9c;
+                    cursor: pointer;
+                    width: 170px;
+                    margin: 0px 10px 0px 0px;
+                    color: #747373;
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-align: center;
+                    background: white;
+                    display: block;
+                    margin: auto;
+                    margin-bottom: -75px;   
+                }
+      
+                .btn-quotation:hover{
+                    color: #cccccc;
+                    background-color: #9c9c9c;
+                    border:none;
+                    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+                }
+            }
+            .card .method .title{    
+                --stroke-color: white;
+                --stroke-width: 5px;    
+            }
+        }
+    }
+
+    .button-card{
+        padding: 20px;
+        .content{
+            position: relative;
+            padding: 15px 20px 40px 20px;
+            border-radius: 15px;
+            background-color: #fff28b;
+            color: #00007b;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;            
+            .btn-quotation{
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);    
+                text-align: center;
+            }
+        }
+
+    }
+
+    .inquiry{
+      .form-container{
+        .description{
+          padding: 30px;
+          color: red;
+        }
+        margin-bottom: 15px;
+      }
+    }
+}

@@ -1,0 +1,82 @@
+.register, .login-form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  form {
+    width: 80%;
+    margin: 50px auto auto;
+    label {
+      display: flex;
+      width: 100%;
+      font-size: 14px;
+      margin: 0px;
+      color: #747373;
+      justify-content: space-between;
+
+      .form-label-description {
+        color: #747373;
+        font-size: 11px;
+      }
+
+      .confirm-message {
+        color: red;
+        margin-top: 25px;
+        font-weight: 600;
+        margin: auto;
+        text-align: center;
+      }
+    }
+    input {
+      width: 100%;
+      border: solid 1px #e8e7e7;
+      font-size: 18px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+      padding: 10px;
+      border-radius: 10px;
+      height: 45px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .btn-send {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 22px;
+    width: 220px;
+    border-radius: 5px;
+    font-weight: 900;
+    border: solid #727172 3px;
+    background-image: linear-gradient(#999899, #717071);
+    color: white;
+    text-shadow: 1px 1px #9d9d9e;
+    padding: 5px 30px 5px 30px;
+  }
+
+  .btn-send:hover {
+    border: solid #e50012 3px;
+    font-weight: 900;
+    opacity: 0.9;
+    border-width: 3px 1px 1px 1px;
+    background-image: linear-gradient(#ec5e47, #e50012);
+    color: white;
+    text-shadow: 1px 1px #9d9d9e;
+  }
+  a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .title {
+    font-weight: 900;
+    margin-bottom: 50px;
+  }
+  .content {
+    color: #318cd2;
+    font-size: 18px;
+    margin-bottom: 60px !important;
+  }
+}

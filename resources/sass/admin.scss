@@ -1,0 +1,114 @@
+.admin-login-form {
+  margin: auto;
+  margin-top: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  h1 {
+    text-align: center;
+  }
+  .form-div {
+    width: 100%;
+    margin-bottom: 10px;
+    input {
+      width: 100%;
+    }
+  }
+  .login-button {
+    margin-top: 20px;
+    text-align: center;
+    button {
+      width: 100%;
+      border-radius: 5px;
+      background-color: #ea5514;
+      color: white;
+      font-size: 16px;
+      border: none;
+      height: 35px;
+    }
+  }
+}
+
+.admin-container {
+  margin-left: 280px;
+  padding: 50px;
+  .card {
+    padding: 20px 80px;
+  }
+  .search-form {
+    .searchImage {
+      width: 30px;
+    }
+    .search_box {
+      width: max-content;
+      background-color: white;
+      border: 1px black solid;
+      border-radius: 5px;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+    }
+    .search-btn {
+      background-color: blue;
+      color: white;
+      margin-left: 20px;
+      width: 80px;
+      height: 35px;
+      text-align: center;
+      border-radius: 5px;
+      border: none;
+    }
+    .search_text {
+      border: none;
+      font-size: 16px;
+      padding: 0 10px;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      float: right;
+    }
+    .search_text:focus {
+      outline: none;
+    }
+  }
+  .trader-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    tr {
+      text-align: center;
+    }
+    th {
+      border: solid 1px #9c9c9c;
+      border-bottom: solid 1px #2b2b2b;
+      padding: 10px 0px 10px 0px;
+    }
+    td {
+      border: solid 1px #9c9c9c;
+      padding: 10px 0px 10px 0px;
+    }
+  }
+  .pagination {
+    justify-content: flex-end;
+  }
+  .btn-danger {
+    background-color: #ff1d30;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+  }
+  .btn-detail {
+    background-color: #1d6dff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+  }
+}
